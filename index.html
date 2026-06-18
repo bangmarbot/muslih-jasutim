@@ -112,7 +112,7 @@
   /* flagship band */
   .flag{background:var(--grad);color:#eafff6;border:none;border-radius:0}
   .flag .sec-label .n,.flag .sec-label h2{color:#fff}
-  .flag-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+  .flag-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
   .flag p{font-size:1.08rem;color:#dff7ee;max-width:54ch}
   .flag .eyebrow{color:#bff0dd}
   .road{display:flex;align-items:center;gap:14px;margin:26px 0 4px;flex-wrap:wrap}
@@ -120,6 +120,8 @@
   .road .arrow{opacity:.8}
   .flag .photo-card img{box-shadow:0 24px 50px -24px rgba(0,0,0,.5)}
   .flag .photo-card figcaption{color:#bfe9d9}
+  .flag-photos{display:flex;flex-direction:column;gap:18px}
+  .flag-photos .photo-card img{height:230px;width:100%;object-fit:cover;object-position:center;border-radius:12px}
   @media(max-width:760px){.flag-grid{grid-template-columns:1fr;gap:26px}}
 
   /* bring cards */
@@ -231,10 +233,10 @@
       </div>
       <figure class="diptych">
         <div class="dip">
-          <img class="gov" src="images/feature-gov.jpg" alt="JASUTIM team, including Muhamad Muslih, meeting with Kota Bekasi government officials" />
+          <img class="gov" src="images/feature-gov.jpg" alt="JASUTIM team, including Muhamad Muslih, meeting with government officials" />
           <img class="comm" src="images/community.jpg" alt="Muhamad Muslih with the JASUTIM community team at the waste bank in Bekasi" />
         </div>
-        <figcaption>On the ground with the community — and at the table with Kota Bekasi's government.</figcaption>
+        <figcaption>On the ground with the community — and at the table with the government.</figcaption>
       </figure>
     </div>
   </section>
@@ -254,10 +256,16 @@
           </div>
           <p style="margin-top:18px">Designed as an investable project — one that can connect Japanese capital and technology with ASEAN feedstock and offtake across plastic circularity, RDF / waste-to-energy, and EPR-based financing.</p>
         </div>
-        <figure class="photo-card">
-          <img src="images/sorting.jpg" alt="Sorting and weighing recovered material, including PET bottles, at the JASUTIM waste bank" />
-          <figcaption>Recovered PET and household material at intake — the feedstock for downstream value.</figcaption>
-        </figure>
+        <div class="flag-photos">
+          <figure class="photo-card">
+            <img src="images/sorting.jpg" alt="Sorting recovered material, including PET bottles, at the JASUTIM waste bank" />
+            <figcaption>Recovered PET and household material at intake — feedstock for downstream value.</figcaption>
+          </figure>
+          <figure class="photo-card">
+            <img src="images/eco-candle.jpg" alt="JASUTIM 'Lilin Aromaterapi' aromatherapy candle, a value-added product" />
+            <figcaption>"Lilin Aromaterapi" — recovered material, turned into a value-added product.</figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
@@ -300,7 +308,7 @@
         <div>
           <h3>Education</h3>
           <ul>
-            <li>Master of Management in Technology <small>President University · ongoing</small></li>
+            <li>Master of Management <small>President University · ongoing</small></li>
             <li>B.Sc. in Information Systems <small>President University · 2014</small></li>
           </ul>
         </div>
